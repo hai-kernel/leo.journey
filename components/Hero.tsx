@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
     if (RESUME_DATA.cvUrl && RESUME_DATA.cvUrl.trim() !== "") {
       const link = document.createElement('a');
       link.href = RESUME_DATA.cvUrl;
-      link.download = `${RESUME_DATA.name.replace(/\s+/g, '_')}_CV.pdf`;
+      link.download = `${RESUME_DATA.realName.replace(/\s+/g, '_')}_CV.pdf`; // Dao_Hong_Hai_CV.pdf
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

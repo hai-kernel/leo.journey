@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { MarqueeSkills } from './components/MarqueeSkills';
+import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
 import { Education } from './components/Education';
 import { Certifications } from './components/Certifications';
@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <div className="relative z-10">
           <Navbar />
           <Hero />
-          <MarqueeSkills />
+          <Skills />
           <Experience />
           <Projects />
 

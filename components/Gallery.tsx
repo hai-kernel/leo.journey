@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { RESUME_DATA } from '../constants';
 
-const CAPTIONS = ["Me", "Small achievement", "The NAB squad"];
+const CAPTIONS = ["Me", "Small achievement", "My journey"];
 
 export const Gallery: React.FC = () => {
   // Landscape photos (e.g. group shots) get a wider frame so nobody is cropped out
