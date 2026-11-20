@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 350" overflow="hidden" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf2f8"/>
+      <stop offset="1" stop-color="#f5f3ff"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#fbcfe8"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="350" fill="url(#bg)"/>
+  <rect width="840" height="350" fill="url(#dots)"/>
+  <circle cx="820" cy="16" r="72" fill="#fbcfe8" opacity="0.8"/>
+  <circle cx="16" cy="344" r="62" fill="#ddd6fe" opacity="0.8"/>
+
+  <!-- ============ Left: badge, title, tech chips ============ -->
+  <rect x="41" y="51" width="140" height="58" rx="12" fill="#000"/>
+  <rect x="36" y="46" width="140" height="58" rx="12" fill="#fff" stroke="#000" stroke-width="3"/>
+  <!-- Embryo icon -->
+  <circle cx="66" cy="75" r="16" fill="#fbcfe8" stroke="#000" stroke-width="2.5"/>
+  <g fill="#fff" stroke="#000" stroke-width="1.8">
+    <circle cx="61" cy="70" r="5.5"/>
+    <circle cx="71" cy="70" r="5.5"/>
+    <circle cx="61" cy="80" r="5.5"/>
+    <circle cx="71" cy="80" r="5.5"/>
+  </g>
+  <text x="92" y="75" dominant-baseline="central" font-size="19" font-weight="800" textLength="74" lengthAdjust="spacingAndGlyphs">IVF Care</text>
+
+  <rect x="193" y="60" width="176" height="34" rx="17" fill="#000"/>
+  <rect x="190" y="57" width="176" height="34" rx="17" fill="#f9a8d4" stroke="#000" stroke-width="3"/>
+  <text x="278" y="74" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="800" textLength="132" lengthAdjust="spacingAndGlyphs">Fertility Clinic</text>
+
+  <rect x="34" y="150" width="312" height="18" fill="#f9a8d4"/>
+  <text x="34" y="164" font-size="62" font-weight="900" textLength="312" lengthAdjust="spacingAndGlyphs">Infertility</text>
+
+  <text x="36" y="208" font-size="21" font-weight="700" fill="#374151">Supporting every step on</text>
+  <text x="36" y="236" font-size="21" font-weight="700" fill="#374151">the road to parenthood</text>
+
+  <g font-size="17" font-weight="800" text-anchor="middle">
+    <rect x="40" y="268" width="124" height="38" rx="19" fill="#000"/>
+    <rect x="36" y="264" width="124" height="38" rx="19" fill="#4ade80" stroke="#000" stroke-width="3"/>
+    <text x="98" y="283" dominant-baseline="central">Spring Boot</text>
+
+    <rect x="174" y="268" width="70" height="38" rx="19" fill="#000"/>
+    <rect x="170" y="264" width="70" height="38" rx="19" fill="#111827" stroke="#000" stroke-width="3"/>
+    <text x="205" y="283" dominant-baseline="central" fill="#fff">JWT</text>
+
+    <rect x="254" y="268" width="94" height="38" rx="19" fill="#000"/>
+    <rect x="250" y="264" width="94" height="38" rx="19" fill="#60a5fa" stroke="#000" stroke-width="3"/>
+    <text x="297" y="283" dominant-baseline="central">VNPAY</text>
+  </g>
+
+  <!-- ============ Right: treatment journey window ============ -->
+  <rect x="436" y="42" width="300" height="250" rx="14" fill="#000"/>
+  <rect x="430" y="36" width="300" height="250" rx="14" fill="#fff"/>
+  <!-- Title bar -->
+  <rect x="430" y="36" width="300" height="36" rx="14" fill="#f3f4f6"/>
+  <rect x="430" y="56" width="300" height="16" fill="#f3f4f6"/>
+  <line x1="430" y1="72" x2="730" y2="72" stroke="#000" stroke-width="3"/>
+  <circle cx="450" cy="54" r="5" fill="#ef4444" stroke="#000" stroke-width="1.5"/>
+  <circle cx="466" cy="54" r="5" fill="#facc15" stroke="#000" stroke-width="1.5"/>
+  <circle cx="482" cy="54" r="5" fill="#4ade80" stroke="#000" stroke-width="1.5"/>
+  <rect x="500" y="45" width="140" height="18" rx="9" fill="#fff" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="512" cy="54" r="4" fill="none" stroke="#6b7280" stroke-width="1.8"/>
+  <line x1="515" y1="57" x2="519" y2="61" stroke="#6b7280" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="526" y="52" width="60" height="4" rx="2" fill="#d1d5db"/>
+  <path d="M666 61 h18 l-2.5 -3.5 v-6 a6.5 6.5 0 0 0 -13 0 v6 z" fill="#facc15" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="675" cy="63.5" r="2" fill="#000"/>
+  <circle cx="690" cy="45" r="8" fill="#ef4444" stroke="#000" stroke-width="1.5"/>
+  <text x="690" y="45" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="800" fill="#fff">2</text>
+
+  <!-- IVF journey: consult, medication, egg retrieval, embryo, baby -->
+  <rect x="444" y="84" width="262" height="58" rx="10" fill="#fff" stroke="#000" stroke-width="2.5"/>
+  <line x1="470" y1="113" x2="682" y2="113" stroke="#e5e7eb" stroke-width="4" stroke-linecap="round"/>
+  <line x1="470" y1="113" x2="576" y2="113" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+  <!-- 1. Consultation (done) -->
+  <circle cx="470" cy="113" r="15" fill="#f9a8d4" stroke="#000" stroke-width="2.5"/>
+  <rect x="464" y="105" width="12" height="16" rx="2" fill="#fff" stroke="#000" stroke-width="1.8"/>
+  <rect x="467" y="103" width="6" height="4" rx="1" fill="#000"/>
+  <path d="M467 112 h6 M467 116 h4" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- 2. Medication (done) -->
+  <circle cx="523" cy="113" r="15" fill="#f9a8d4" stroke="#000" stroke-width="2.5"/>
+  <g transform="rotate(45 523 113)" stroke="#000" stroke-width="1.8" stroke-linecap="round">
+    <rect x="519" y="105" width="8" height="13" rx="1.5" fill="#fff"/>
+    <line x1="523" y1="118" x2="523" y2="124"/>
+    <line x1="523" y1="105" x2="523" y2="101"/>
+    <line x1="519.5" y1="101" x2="526.5" y2="101"/>
+  </g>
+  <!-- 3. Egg retrieval (current) -->
+  <circle cx="576" cy="113" r="20" fill="none" stroke="#f472b6" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="576" cy="113" r="15" fill="#fff" stroke="#db2777" stroke-width="3"/>
+  <ellipse cx="576" cy="114" rx="7" ry="9" fill="#fde68a" stroke="#000" stroke-width="2"/>
+  <!-- 4. Embryo (next) -->
+  <circle cx="629" cy="113" r="15" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+  <g fill="#fff" stroke="#9ca3af" stroke-width="1.5">
+    <circle cx="625.5" cy="109.5" r="3.6"/>
+    <circle cx="632.5" cy="109.5" r="3.6"/>
+    <circle cx="625.5" cy="116.5" r="3.6"/>
+    <circle cx="632.5" cy="116.5" r="3.6"/>
+  </g>
+  <!-- 5. Baby (goal) -->
+  <circle cx="682" cy="113" r="15" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+  <circle cx="682" cy="115" r="8" fill="#fff" stroke="#9ca3af" stroke-width="1.8"/>
+  <path d="M682 107 q3 -3 0 -5" fill="none" stroke="#9ca3af" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="679" cy="114" r="1.2" fill="#9ca3af"/>
+  <circle cx="685" cy="114" r="1.2" fill="#9ca3af"/>
+  <path d="M679.5 118 q2.5 2 5 0" fill="none" stroke="#9ca3af" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Ultrasound scan -->
+  <rect x="444" y="152" width="130" height="84" rx="10" fill="#111827" stroke="#000" stroke-width="2.5"/>
+  <path d="M509 160 L470 216 A68 68 0 0 0 548 216 Z" fill="#374151"/>
+  <ellipse cx="509" cy="203" rx="21" ry="14" fill="#0b0f19" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="502" cy="200" r="5" fill="#e5e7eb"/>
+  <ellipse cx="511" cy="205" rx="7.5" ry="5" fill="#e5e7eb"/>
+  <path d="M533 191.4 C527.6 188.2 529 183.6 533 185.8 C537 183.6 538.4 188.2 533 191.4Z" fill="#f472b6"/>
+  <text x="452" y="170" dominant-baseline="central" font-size="11" font-weight="800" fill="#9ca3af">8 wks</text>
+
+  <!-- Cycle calendar with fertile window -->
+  <rect x="584" y="152" width="122" height="84" rx="10" fill="#fff" stroke="#000" stroke-width="2.5"/>
+  <g fill="#f3f4f6">
+    <circle cx="600" cy="170" r="7"/>
+    <circle cx="622" cy="170" r="7"/>
+    <circle cx="644" cy="170" r="7"/>
+    <circle cx="666" cy="170" r="7"/>
+    <circle cx="688" cy="170" r="7" fill="#fbcfe8"/>
+    <circle cx="600" cy="192" r="7" fill="#fbcfe8"/>
+    <circle cx="622" cy="192" r="7" fill="#fbcfe8"/>
+    <circle cx="666" cy="192" r="7" fill="#fbcfe8"/>
+    <circle cx="688" cy="192" r="7"/>
+    <circle cx="600" cy="214" r="7"/>
+    <circle cx="622" cy="214" r="7"/>
+    <circle cx="644" cy="214" r="7"/>
+    <circle cx="666" cy="214" r="7"/>
+    <circle cx="688" cy="214" r="7"/>
+  </g>
+  <path d="M644 201 C634.4 195.4 636.8 187.4 644 191.4 C651.2 187.4 653.6 195.4 644 201Z" fill="#db2777" stroke="#000" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- Next step -->
+  <rect x="444" y="246" width="264" height="32" rx="8" fill="#111827"/>
+  <text x="456" y="262" dominant-baseline="central" font-size="14" font-weight="800" fill="#fff" textLength="150" lengthAdjust="spacingAndGlyphs">Next: embryo transfer</text>
+  <rect x="644" y="252" width="56" height="20" rx="10" fill="#facc15"/>
+  <text x="672" y="262" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="900">9:00</text>
+  <!-- Window border on top -->
+  <rect x="430" y="36" width="300" height="250" rx="14" fill="none" stroke="#000" stroke-width="3.5"/>
+
+  <!-- ============ Phone: positive test result ============ -->
+  <rect x="714" y="134" width="112" height="196" rx="20" fill="#000"/>
+  <rect x="708" y="128" width="112" height="196" rx="20" fill="#111827" stroke="#000" stroke-width="3"/>
+  <rect x="716" y="140" width="96" height="172" rx="12" fill="#fdf2f8"/>
+  <rect x="748" y="131" width="32" height="5" rx="2.5" fill="#4b5563"/>
+  <rect x="722" y="150" width="84" height="40" rx="8" fill="#fff" stroke="#000" stroke-width="2"/>
+  <path d="M736 176.3 C727.6 171.4 729.7 164.4 736 167.9 C742.3 164.4 744.4 171.4 736 176.3Z" fill="#f472b6" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="748" y="170" dominant-baseline="central" font-size="12" font-weight="900" textLength="52" lengthAdjust="spacingAndGlyphs">Positive</text>
+  <!-- Pregnancy test -->
+  <rect x="752" y="200" width="24" height="86" rx="12" fill="#fff"/>
+  <rect x="752" y="200" width="24" height="20" rx="12" fill="#f9a8d4"/>
+  <rect x="752" y="210" width="24" height="10" fill="#f9a8d4"/>
+  <line x1="752" y1="220" x2="776" y2="220" stroke="#000" stroke-width="2.5"/>
+  <rect x="757" y="228" width="14" height="26" rx="3" fill="#fdf2f8" stroke="#000" stroke-width="1.5"/>
+  <rect x="757" y="234" width="14" height="3" fill="#db2777"/>
+  <rect x="757" y="244" width="14" height="3" fill="#db2777"/>
+  <rect x="752" y="200" width="24" height="86" rx="12" fill="none" stroke="#000" stroke-width="2.5"/>
+  <path d="M736 241.4 C728.8 237.2 730.6 231.2 736 234.2 C741.4 231.2 743.2 237.2 736 241.4Z" fill="#f472b6"/>
+  <path d="M792 266.5 C786 263 787.5 258 792 260.5 C796.5 258 798 263 792 266.5Z" fill="#f472b6"/>
+  <rect x="748" y="300" width="32" height="4" rx="2" fill="#9ca3af"/>
+
+  <!-- ============ Floating decorations ============ -->
+  <!-- Heart with baby footprints -->
+  <g transform="rotate(-10 416 272)">
+    <path d="M421 305 C393 289 389 267 403 259 C412 254 419 259 421 264 C423 259 430 254 439 259 C453 267 449 289 421 305 Z" fill="#000"/>
+    <path d="M416 300 C388 284 384 262 398 254 C407 249 414 254 416 259 C418 254 425 249 434 254 C448 262 444 284 416 300 Z" fill="#f9a8d4" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+    <g fill="#fff" stroke="#000" stroke-width="1.2">
+      <g transform="rotate(-12 407 279)">
+        <ellipse cx="407" cy="279" rx="4.5" ry="7"/>
+        <circle cx="404" cy="269.5" r="1.7"/>
+        <circle cx="407" cy="268" r="1.7"/>
+        <circle cx="410" cy="269.5" r="1.7"/>
+      </g>
+      <g transform="rotate(12 425 273)">
+        <ellipse cx="425" cy="273" rx="4.5" ry="7"/>
+        <circle cx="422" cy="263.5" r="1.7"/>
+        <circle cx="425" cy="262" r="1.7"/>
+        <circle cx="428" cy="263.5" r="1.7"/>
+      </g>
+    </g>
+  </g>
+  <!-- IVF tag -->
+  <g transform="rotate(12 776 74)">
+    <path d="M746 56 h64 a6 6 0 0 1 6 6 v24 a6 6 0 0 1 -6 6 h-64 l-14 -18 z" fill="#c4b5fd" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="745" cy="74" r="3.5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <text x="782" y="74" text-anchor="middle" dominant-baseline="central" font-size="20" font-weight="900">IVF</text>
+  </g>
+  <!-- Sparkles -->
+  <g stroke="#000" stroke-width="2" stroke-linejoin="round">
+    <path d="M400 27 Q400 40 413 40 Q400 40 400 53 Q400 40 387 40 Q400 40 400 27Z" fill="#facc15"/>
+    <path d="M408 109 Q408 118 417 118 Q408 118 408 127 Q408 118 399 118 Q408 118 408 109Z" fill="#f472b6"/>
+    <path d="M828 104 Q828 112 836 112 Q828 112 828 120 Q828 112 820 112 Q828 112 828 104Z" fill="#c4b5fd"/>
+  </g>
+</svg>

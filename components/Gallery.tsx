@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RESUME_DATA } from '../constants';
 
+const CAPTIONS = ["Me", "Small achievement", "The NAB squad"];
+
 export const Gallery: React.FC = () => {
+  // Landscape photos (e.g. group shots) get a wider frame so nobody is cropped out
+  const [landscape, setLandscape] = useState<Record<number, boolean>>({});
+
   if (!RESUME_DATA.personalPhotos || RESUME_DATA.personalPhotos.length === 0) {
     return null;
   }
@@ -23,13 +28,14 @@ export const Gallery: React.FC = () => {
           <p className="font-handwriting text-2xl text-gray-600 mt-8">Beyond the code...</p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-8 lg:gap-10">
           {RESUME_DATA.personalPhotos.map((photo, index) => {
             // Apply different rotation to each photo for a casual, polaroid look
             const rotations = ['-rotate-6', 'rotate-3', '-rotate-2'];
             const hoverRotations = ['hover:rotate-0', 'hover:-rotate-2', 'hover:rotate-2'];
             const zIndices = ['z-10', 'z-20', 'z-10'];
-            const margins = ['mt-0', 'md:mt-12', 'mt-0']; // Middle photo drops down a bit
+            const margins = ['mt-0', 'lg:mt-12', 'mt-0']; // Middle photo drops down a bit
+            const isLandscape = landscape[index];
 
             return (
               <div 
@@ -37,16 +43,22 @@ export const Gallery: React.FC = () => {
                 className={`group relative ${rotations[index % rotations.length]} ${hoverRotations[index % hoverRotations.length]} transition-all duration-300 hover:scale-105 hover:z-30 ${zIndices[index % zIndices.length]} ${margins[index % margins.length]}`}
               >
                 {/* Polaroid Frame */}
-                <div className="bg-white p-4 pb-12 md:pb-16 border-[3px] border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] w-64 md:w-80 transition-shadow duration-300">
+                <div className={`bg-white p-4 pb-12 md:pb-16 border-[3px] border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] ${isLandscape ? 'w-72 md:w-96' : 'w-64 md:w-80'} transition-shadow duration-300`}>
                   {/* Tape */}
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-24 h-8 bg-white/50 backdrop-blur-sm border border-gray-200 shadow-sm rotate-2 z-20"></div>
                   
                   {/* Image Container */}
-                  <div className="aspect-[3/4] md:aspect-square w-full overflow-hidden border-[3px] border-black bg-gray-100 flex items-center justify-center relative">
+                  <div className={`${isLandscape ? 'aspect-[4/3]' : 'aspect-[3/4] md:aspect-square'} w-full overflow-hidden border-[3px] border-black bg-gray-100 flex items-center justify-center relative`}>
                     <div className="absolute inset-0 border-4 border-black/10 z-10 pointer-events-none"></div>
-                    <img 
-                      src={photo} 
-                      alt={`Personal memory ${index + 1}`} 
+                    <img
+                      src={photo}
+                      alt={CAPTIONS[index] ?? `Personal memory ${index + 1}`}
+                      onLoad={(e) => {
+                        const img = e.currentTarget;
+                        if (img.naturalWidth > img.naturalHeight) {
+                          setLandscape(prev => ({ ...prev, [index]: true }));
+                        }
+                      }}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
                     />
                   </div>
@@ -54,7 +66,7 @@ export const Gallery: React.FC = () => {
                   {/* Doodle / Text */}
                   <div className="absolute bottom-4 left-0 w-full text-center">
                     <span className="font-handwriting text-xl font-bold text-gray-800 opacity-80 group-hover:opacity-100 transition-opacity">
-                      {index === 0 ? "Me & my code" : index === 1 ? "Just vibing" : "Always learning"}
+                      {CAPTIONS[index] ?? "Always learning"}
                     </span>
                   </div>
                 </div>

@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 350" overflow="hidden" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1f2"/>
+      <stop offset="1" stop-color="#eff6ff"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#fbcfe8"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="350" fill="url(#bg)"/>
+  <rect width="840" height="350" fill="url(#dots)"/>
+  <circle cx="820" cy="16" r="72" fill="#fde68a" opacity="0.6"/>
+  <circle cx="16" cy="344" r="62" fill="#fecaca" opacity="0.7"/>
+
+  <!-- ============ Left: NAB logo, title, tech chips ============ -->
+  <rect x="41" y="51" width="140" height="58" rx="12" fill="#000"/>
+  <rect x="36" y="46" width="140" height="58" rx="12" fill="#fff" stroke="#000" stroke-width="3"/>
+  <svg x="48" y="52" width="116" height="46" viewBox="0 0 125 50">
+    <path d="m30.946 2.0412-7.8464 9.4494-10.968-5.2309c-0.25311 0-0.50622-0.25311-0.75932 0-0.25311 0-0.25311 0.25311 0 0.75933l2.5311 12.065-10.968 5.2309c-0.25311 0-0.50622 0.25311-0.50622 0.50622s0.25311 0.50622 0.50622 0.50622l10.968 5.484-2.6155 12.065v0.75933h0.75933l10.968-5.2309 7.5932 9.7025c0.25311 0.25311 0.50622 0.50622 0.75933 0.25311 0.25311 0 0.25311-0.25311 0.50622-0.50622l2.8686-11.812h12.402c0.25311 0 0.50622 0 0.75932-0.25311 0-0.25311 0-0.50622-0.25311-0.75932l-7.5933-9.7025 7.9307-9.7025c0.25311-0.25311 0.25311-0.50622 0.25311-0.75932s-0.25311-0.25311-0.75933-0.25311h-3.1217c-0.25311 0-0.50622 0-0.50622 0.25311l-11.643 12.318h-0.25311v-0.25311c0.25311-0.25311 6.5808-8.0995 9.9556-12.065v-0.25311c0-0.25311 0-0.25311-0.25311-0.25311h-3.9654c-0.25311 0-0.75932 0.25311-0.75932 0.50622-1.8561 2.1092-11.306 12.065-11.559 12.065h-0.16874v-0.25311l9.7025-11.812c0.25311-0.25311 0.25311-0.50622 0.25311-0.75932 0 0-2.6155-11.812-2.6155-12.065 6e-6 -0.25311-0.2531-0.50622-0.50621-0.50622-0.84369 0.25311-1.0968 0.25311-1.0968 0.50622z" fill="#a91f23"/>
+    <path d="m10.275 26.087c-2.8686 0-5.484-0.50622-7.8464-1.603 0 0 0.25311 0 0.25311-0.25311l10.968-5.2309-2.6155-12.065v-0.75932h0.75932l10.968 5.2309 7.8464-9.4494c0.25311-0.25311 0.50622-0.25311 0.50622-0.25311 0 1.0124 0.25311 1.8561 0.25311 2.8686 0.33748 11.896-9.365 21.514-21.092 21.514zm29.867-10.462c0.25311-0.25311 0.50622-0.75932 0.75932-1.0124h-3.6279c-0.25311 0-0.50622 0.25311-0.75932 0.25311 0 0.50622 0 1.3499 0.50622 1.603 0.50622 0.75933 2.0249 0.25311 3.1217-0.84369zm3.6279-1.2655c-0.25311 0-0.50622 0-0.50622 0.25311l-0.25311 0.25311c0 0.50622 0.25311 0.75932 0.50622 1.0124 0.75932 0.75932 2.3623 0.25311 3.1217-0.75933 0.25311-0.25311 0.25311-0.50622 0.50622-0.75932h-3.3748z" fill="#ec2024"/>
+    <radialGradient id="nabStar" cx="37.87" cy="53.63" r="45.24" gradientTransform="matrix(.84369 0 0 .84369 -.9457 -3.6959)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#de1f26" offset=".49"/>
+      <stop stop-color="#e84b4f" offset=".74"/>
+      <stop stop-color="#f27778" offset="1"/>
+    </radialGradient>
+    <path d="m45.879 15.372h-2.1092c-0.50622 0-0.75932 0.25311-1.0124 0.50622-3.9654 4.2185-10.462 10.968-10.715 10.968-0.75932 0.75932-1.3499 0.25311-0.50622-0.50622 0.25311-0.25311 5.484-6.5808 8.6057-10.462 0-0.25311 0.25311-0.50622 0-0.50622h-3.1217c-0.25311 0-0.50622 0-0.75932 0.25311-3.9654 4.2185-10.715 11.306-10.968 11.306-0.75933 0.75932-1.3499 0.25311-0.50622-0.50622 0.25311-0.25311 5.9902-7.3401 8.9432-11.306 0.25311-0.25311 0.25311-0.50622 0.25311-1.0124l-2.5311-10.546c0-0.25311-0.25311-0.50622-0.50622 0l-7.087 8.6057c-0.25311 0.25311-0.75932 0.50622-1.0124 0.25311l-9.9556-4.9778c-0.25311 0-0.50622 0-0.50622 0.25311l2.3623 10.968c0 0.25311 0 0.75932-0.50622 1.0124l-10.04 4.8934c-0.25311 0-0.25311 0.50622 0 0.50622l9.9556 4.9778c0.25311 0 0.50622 0.50622 0.50622 1.0124l-2.6155 10.799c0 0.25311 0 0.50622 0.50622 0.25311l10.209-4.7247c0.25311 0 0.75933 0 1.0124 0.25311l6.8339 8.6057c0.25311 0.25311 0.50622 0.25311 0.50622 0l2.6155-10.715c0-0.25311 0.50622-0.50622 0.75932-0.50622h10.968c0.25311 0 0.50622-0.25311 0.25311-0.50622l-6.8339-8.9432c-0.25311-0.25311-0.25311-0.75933 0-1.0124l7.087-8.6057c0.42185-0.33748 0.16874-0.59059-0.08436-0.59059z" fill="url(#nabStar)" stroke-width="1.6964"/>
+    <path d="m60.56 16.468c2.1092-2.1092 4.2185-2.8686 6.8339-2.8686 4.9778 0 7.8464 2.8686 7.8464 8.6057v13.33h-5.9902v-12.318c0-3.1217-1.0124-4.7247-3.1217-4.7247-1.8561 0-2.8686 0.75932-4.7247 2.6155v14.427h-5.9902v-17.549c-0.25311 0-1.8561-0.25311-1.8561-0.25311v-3.3748l6.5808-0.25311c0.16874 0 0.42185 1.5186 0.42185 2.3623m52.14 2.0249c-1.603 0-3.1217 0.75932-4.9778 2.8686v9.1963c0.75933 0.25311 2.1092 0.75932 3.3748 0.75932 4.2185 0 4.9778-3.3748 4.9778-6.5808 0.25312-4.1341-0.75932-6.2433-3.3748-6.2433m-4.7247-12.571v9.9556c1.8561-1.603 3.6279-2.3623 5.9902-2.3623 5.2309 0 8.6057 3.9654 8.6057 10.462 0 7.5933-4.2185 12.065-11.559 12.065-2.6155 0-5.9902-0.50622-8.9432-1.3499v-24.889c-0.25312 0-2.1092-0.25311-2.1092-0.25311v-3.3748zm-28.011 8.9432c2.3623-0.75932 5.2309-1.3499 7.8464-1.3499 5.9902 0 9.1963 2.6155 9.1963 7.5932v10.715c0.50621 0 2.1092 0.25311 2.1092 0.25311v3.3748l-6.5808 0.25311s-0.2531-1.0124-0.2531-1.603c-1.8561 1.603-3.9654 2.3623-6.3277 2.3623-4.7247 0-7.5932-2.6155-7.5932-6.8339 0-4.7247 3.6279-7.087 10.715-7.087h2.1092v-0.75933c0-2.3623-0.50622-3.3748-3.9654-3.3748-1.8561 0-4.2185 0.50622-5.9902 1.3499h-0.50621l-1.0124-4.4716 0.25311-0.42185m4.1341 14.427c0 1.603 1.0124 2.6155 2.8686 2.6155 1.603 0 2.6154-0.50622 4.2185-1.8561v-3.3748h-2.1092c-4.3872-0.25311-4.9778 1.2655-4.9778 2.6155" fill="#231f20"/>
+  </svg>
+
+  <rect x="193" y="60" width="176" height="34" rx="17" fill="#000"/>
+  <rect x="190" y="57" width="176" height="34" rx="17" fill="#4ade80" stroke="#000" stroke-width="3"/>
+  <text x="278" y="74" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="800">Training Project</text>
+
+  <rect x="34" y="150" width="330" height="18" fill="#facc15"/>
+  <text x="34" y="164" font-size="58" font-weight="900" textLength="330" lengthAdjust="spacingAndGlyphs">NabBazaar</text>
+
+  <text x="36" y="208" font-size="21" font-weight="700" fill="#374151">Online shopping built with</text>
+  <text x="36" y="236" font-size="21" font-weight="700" fill="#374151">Spring Boot microservices</text>
+
+  <g font-size="17" font-weight="800" text-anchor="middle">
+    <rect x="40" y="268" width="130" height="38" rx="19" fill="#000"/>
+    <rect x="36" y="264" width="130" height="38" rx="19" fill="#4ade80" stroke="#000" stroke-width="3"/>
+    <text x="101" y="283" dominant-baseline="central">Spring Boot</text>
+
+    <rect x="180" y="268" width="84" height="38" rx="19" fill="#000"/>
+    <rect x="176" y="264" width="84" height="38" rx="19" fill="#111827" stroke="#000" stroke-width="3"/>
+    <text x="218" y="283" dominant-baseline="central" fill="#fff">Kafka</text>
+
+    <rect x="274" y="268" width="84" height="38" rx="19" fill="#000"/>
+    <rect x="270" y="264" width="84" height="38" rx="19" fill="#ef4444" stroke="#000" stroke-width="3"/>
+    <text x="312" y="283" dominant-baseline="central" fill="#fff">Redis</text>
+  </g>
+
+  <!-- ============ Right: shop window ============ -->
+  <rect x="436" y="42" width="300" height="250" rx="14" fill="#000"/>
+  <rect x="430" y="36" width="300" height="250" rx="14" fill="#fff"/>
+  <!-- Title bar -->
+  <rect x="430" y="36" width="300" height="36" rx="14" fill="#f3f4f6"/>
+  <rect x="430" y="56" width="300" height="16" fill="#f3f4f6"/>
+  <line x1="430" y1="72" x2="730" y2="72" stroke="#000" stroke-width="3"/>
+  <circle cx="450" cy="54" r="5" fill="#ef4444" stroke="#000" stroke-width="1.5"/>
+  <circle cx="466" cy="54" r="5" fill="#facc15" stroke="#000" stroke-width="1.5"/>
+  <circle cx="482" cy="54" r="5" fill="#4ade80" stroke="#000" stroke-width="1.5"/>
+  <rect x="500" y="45" width="140" height="18" rx="9" fill="#fff" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="512" cy="54" r="4" fill="none" stroke="#6b7280" stroke-width="1.8"/>
+  <line x1="515" y1="57" x2="519" y2="61" stroke="#6b7280" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="526" y="52" width="60" height="4" rx="2" fill="#d1d5db"/>
+  <g transform="translate(662 43) scale(0.85)" fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="8" cy="21" r="1"/>
+    <circle cx="19" cy="21" r="1"/>
+    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+  </g>
+  <circle cx="690" cy="45" r="8" fill="#ef4444" stroke="#000" stroke-width="1.5"/>
+  <text x="690" y="45" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="800" fill="#fff">3</text>
+
+  <!-- Product cards -->
+  <g stroke="#000" stroke-width="2.5">
+    <rect x="444" y="86" width="80" height="144" rx="10" fill="#fff"/>
+    <rect x="450" y="92" width="68" height="66" rx="7" fill="#fde68a" stroke="none"/>
+    <rect x="536" y="86" width="80" height="144" rx="10" fill="#fff"/>
+    <rect x="542" y="92" width="68" height="66" rx="7" fill="#bfdbfe" stroke="none"/>
+    <rect x="628" y="86" width="80" height="144" rx="10" fill="#fff"/>
+    <rect x="634" y="92" width="68" height="66" rx="7" fill="#fecaca" stroke="none"/>
+  </g>
+  <!-- Headphones -->
+  <path d="M466 132 v-6 a18 18 0 0 1 36 0 v6" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <rect x="461" y="128" width="11" height="17" rx="4" fill="#ef4444" stroke="#000" stroke-width="2.5"/>
+  <rect x="496" y="128" width="11" height="17" rx="4" fill="#ef4444" stroke="#000" stroke-width="2.5"/>
+  <!-- Sneaker -->
+  <path d="M552 134 L552 114 L566 114 L572 121 L584 123 C594 125 600 128 600 134 Z" fill="#fff" stroke="#000" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M568 129 l12 -5" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="550" y="134" width="52" height="8" rx="4" fill="#111827"/>
+  <!-- Watch -->
+  <rect x="661" y="100" width="14" height="50" rx="4" fill="#111827"/>
+  <circle cx="668" cy="125" r="15" fill="#fff" stroke="#000" stroke-width="3"/>
+  <path d="M668 125 v-9 M668 125 l7 3" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Names, prices, add buttons -->
+  <g fill="#d1d5db">
+    <rect x="452" y="168" width="56" height="7" rx="3.5"/>
+    <rect x="544" y="168" width="56" height="7" rx="3.5"/>
+    <rect x="636" y="168" width="56" height="7" rx="3.5"/>
+  </g>
+  <g fill="#e5e7eb">
+    <rect x="452" y="180" width="38" height="6" rx="3"/>
+    <rect x="544" y="180" width="38" height="6" rx="3"/>
+    <rect x="636" y="180" width="38" height="6" rx="3"/>
+  </g>
+  <g font-size="16" font-weight="800">
+    <text x="452" y="211">$49</text>
+    <text x="544" y="211">$89</text>
+    <text x="636" y="211">$25</text>
+  </g>
+  <g>
+    <circle cx="506" cy="205" r="11" fill="#111827"/>
+    <circle cx="598" cy="205" r="11" fill="#111827"/>
+    <circle cx="690" cy="205" r="11" fill="#111827"/>
+    <path d="M501 205 h10 M506 200 v10 M593 205 h10 M598 200 v10 M685 205 h10 M690 200 v10" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <!-- Promo bar -->
+  <rect x="444" y="242" width="264" height="32" rx="8" fill="#111827"/>
+  <polygon points="468,247 459,260 465,260 461,270 472,256 466,256 470,247" fill="#facc15"/>
+  <text x="586" y="258" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="800" fill="#fff">Flash sale · 50% off</text>
+  <!-- Window border on top -->
+  <rect x="430" y="36" width="300" height="250" rx="14" fill="none" stroke="#000" stroke-width="3.5"/>
+
+  <!-- ============ Phone with order notification ============ -->
+  <rect x="714" y="134" width="112" height="196" rx="20" fill="#000"/>
+  <rect x="708" y="128" width="112" height="196" rx="20" fill="#111827" stroke="#000" stroke-width="3"/>
+  <rect x="716" y="140" width="96" height="172" rx="12" fill="#f9fafb"/>
+  <rect x="748" y="131" width="32" height="5" rx="2.5" fill="#4b5563"/>
+  <rect x="722" y="150" width="84" height="58" rx="8" fill="#fff" stroke="#000" stroke-width="2"/>
+  <circle cx="738" cy="170" r="10" fill="#4ade80" stroke="#000" stroke-width="2"/>
+  <path d="M733 170 l3.5 3.5 l6 -7" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="752" y="167" font-size="13" font-weight="800">Order</text>
+  <text x="752" y="182" font-size="13" font-weight="800">placed!</text>
+  <rect x="728" y="193" width="70" height="6" rx="3" fill="#e5e7eb"/>
+  <line x1="732" y1="228" x2="796" y2="228" stroke="#d1d5db" stroke-width="4" stroke-linecap="round"/>
+  <line x1="732" y1="228" x2="764" y2="228" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="732" cy="228" r="6" fill="#4ade80" stroke="#000" stroke-width="2"/>
+  <circle cx="764" cy="228" r="6" fill="#4ade80" stroke="#000" stroke-width="2"/>
+  <circle cx="796" cy="228" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+  <rect x="744" y="256" width="40" height="32" rx="3" fill="#fdba74" stroke="#000" stroke-width="2.5"/>
+  <line x1="744" y1="266" x2="784" y2="266" stroke="#000" stroke-width="2.5"/>
+  <line x1="764" y1="256" x2="764" y2="266" stroke="#000" stroke-width="2.5"/>
+  <rect x="748" y="300" width="32" height="4" rx="2" fill="#9ca3af"/>
+
+  <!-- ============ Floating decorations ============ -->
+  <!-- Shopping bag -->
+  <g transform="rotate(-10 416 270)">
+    <rect x="393" y="245" width="56" height="60" rx="8" fill="#000"/>
+    <path d="M402 242 v-8 a14 14 0 0 1 28 0 v8" fill="none" stroke="#000" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="388" y="240" width="56" height="60" rx="8" fill="#facc15" stroke="#000" stroke-width="3"/>
+    <circle cx="416" cy="272" r="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
+    <text x="416" y="273" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="900">%</text>
+  </g>
+  <!-- Sale tag -->
+  <g transform="rotate(12 776 74)">
+    <path d="M746 56 h64 a6 6 0 0 1 6 6 v24 a6 6 0 0 1 -6 6 h-64 l-14 -18 z" fill="#f472b6" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="745" cy="74" r="3.5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <text x="782" y="74" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="900">SALE</text>
+  </g>
+  <!-- Sparkles -->
+  <g stroke="#000" stroke-width="2" stroke-linejoin="round">
+    <path d="M400 27 Q400 40 413 40 Q400 40 400 53 Q400 40 387 40 Q400 40 400 27Z" fill="#facc15"/>
+    <path d="M408 109 Q408 118 417 118 Q408 118 408 127 Q408 118 399 118 Q408 118 408 109Z" fill="#60a5fa"/>
+    <path d="M828 104 Q828 112 836 112 Q828 112 828 120 Q828 112 820 112 Q828 112 828 104Z" fill="#4ade80"/>
+  </g>
+</svg>

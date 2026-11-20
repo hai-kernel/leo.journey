@@ -28,9 +28,9 @@ const App: React.FC = () => {
           <Navbar />
           <Hero />
           <MarqueeSkills />
-          <Projects />
           <Experience />
-          
+          <Projects />
+
           {/* Compact Grid for Credentials */}
           <section id="credentials" className="max-w-7xl mx-auto px-6 md:px-12 py-12">
             <h2 className="text-4xl font-black text-center mb-12 uppercase tracking-tighter">
@@ -39,14 +39,12 @@ const App: React.FC = () => {
               </span>
             </h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-               {/* Left Column: Education (Takes full height of column) */}
-               <div className="h-full">
-                  <Education />
-               </div>
+            <div className="flex flex-col gap-12">
+               {/* Education: one full-width row */}
+               <Education />
 
-               {/* Right Column: Stacked Certs & Honors */}
-               <div className="flex flex-col gap-8">
+               {/* Certifications and Honors side by side */}
+               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-start">
                   <Certifications />
                   <Honors />
                </div>

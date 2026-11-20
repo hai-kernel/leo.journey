@@ -1,9 +1,10 @@
 import { ResumeData } from './types';
-import langmasterImg from './img/project-1/z7748961283356_bceba2b31ec370f964764ef1f2bc5d83.jpg';
-import infinityImg from './img/project-2/Gemini_Generated_Image_f5zcyrf5zcyrf5zc.png';
+import langmasterImg from './img/project-1/langmaster-cover.svg';
+import infinityImg from './img/project-2/infertility-cover.svg';
+import nabBazaarImg from './img/project-3/nabbazaar-cover.svg';
 import personalImg1 from './img/personal/z7748881404441_471757216daf1147f636a165f0d2f3ea.jpg';
-import personalImg2 from './img/personal/z7748881817292_96591714bfdb135c4730ddeb137ee193.jpg';
-import personalImg3 from './img/personal/z7748884727806_4ac82a9ef5b19ecfc6444d2080619851.jpg';
+import personalImg2 from './img/personal/nab-starcamp-graduation.webp';
+import personalImg3 from './img/personal/nab-starcamp-team.webp';
 import nabLogo from './img/companies/nab.svg';
 import fptLogo from './img/companies/fpt-software.svg';
 import cvPdf from './cv/Dao_Hong_Hai_CV.pdf';
@@ -81,6 +82,7 @@ export const RESUME_DATA: ResumeData = {
       duration: "July 2026 - Oct 2026",
       technologies: ["Java Spring Boot", "Spring Cloud Gateway", "Keycloak", "Eureka", "Apache Kafka", "Redis", "MySQL"],
       description: "An e-commerce system built with microservices during the NAB training program, covering users, products, orders, inventory and notifications.",
+      imageUrl: nabBazaarImg,
       keyContributions: [
         "Handled 5 microservices (user, order, product, notification, inventory).",
         "Secured all APIs at the API Gateway by using Keycloak.",

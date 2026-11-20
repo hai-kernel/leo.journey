@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 350" overflow="hidden" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#ecfeff"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#c7d2fe"/>
+    </pattern>
+    <path id="star" d="M0 -6 L1.53 -2.1 L5.71 -1.85 L2.47 0.8 L3.53 4.85 L0 2.6 L-3.53 4.85 L-2.47 0.8 L-5.71 -1.85 L-1.53 -2.1Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="350" fill="url(#bg)"/>
+  <rect width="840" height="350" fill="url(#dots)"/>
+  <circle cx="820" cy="16" r="72" fill="#c4b5fd" opacity="0.55"/>
+  <circle cx="16" cy="344" r="62" fill="#a5f3fc" opacity="0.7"/>
+
+  <!-- ============ Left: badge, title, tech chips ============ -->
+  <rect x="41" y="51" width="140" height="58" rx="12" fill="#000"/>
+  <rect x="36" y="46" width="140" height="58" rx="12" fill="#fff" stroke="#000" stroke-width="3"/>
+  <line x1="66" y1="62" x2="66" y2="56" stroke="#000" stroke-width="2.5"/>
+  <circle cx="66" cy="54" r="3.5" fill="#facc15" stroke="#000" stroke-width="2"/>
+  <rect x="50" y="62" width="32" height="26" rx="7" fill="#93c5fd" stroke="#000" stroke-width="2.5"/>
+  <circle cx="60" cy="74" r="3" fill="#000"/>
+  <circle cx="72" cy="74" r="3" fill="#000"/>
+  <path d="M61 81 h10" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="92" y="75" dominant-baseline="central" font-size="17" font-weight="800" textLength="76" lengthAdjust="spacingAndGlyphs">AI Tutor</text>
+
+  <rect x="193" y="60" width="176" height="34" rx="17" fill="#000"/>
+  <rect x="190" y="57" width="176" height="34" rx="17" fill="#a78bfa" stroke="#000" stroke-width="3"/>
+  <text x="278" y="74" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="800">English Learning</text>
+
+  <rect x="34" y="150" width="330" height="18" fill="#facc15"/>
+  <text x="34" y="164" font-size="58" font-weight="900" textLength="330" lengthAdjust="spacingAndGlyphs">Langmaster</text>
+
+  <text x="36" y="208" font-size="21" font-weight="700" fill="#374151">Practice speaking English</text>
+  <text x="36" y="236" font-size="21" font-weight="700" fill="#374151">with a real-time AI tutor</text>
+
+  <g font-size="17" font-weight="800" text-anchor="middle">
+    <rect x="40" y="268" width="124" height="38" rx="19" fill="#000"/>
+    <rect x="36" y="264" width="124" height="38" rx="19" fill="#4ade80" stroke="#000" stroke-width="3"/>
+    <text x="98" y="283" dominant-baseline="central">Spring Boot</text>
+
+    <rect x="174" y="268" width="112" height="38" rx="19" fill="#000"/>
+    <rect x="170" y="264" width="112" height="38" rx="19" fill="#111827" stroke="#000" stroke-width="3"/>
+    <text x="226" y="283" dominant-baseline="central" fill="#fff" textLength="90" lengthAdjust="spacingAndGlyphs">WebSocket</text>
+
+    <rect x="296" y="268" width="84" height="38" rx="19" fill="#000"/>
+    <rect x="292" y="264" width="84" height="38" rx="19" fill="#a78bfa" stroke="#000" stroke-width="3"/>
+    <text x="334" y="283" dominant-baseline="central">OpenAI</text>
+  </g>
+
+  <!-- ============ Right: speaking practice window ============ -->
+  <rect x="436" y="42" width="300" height="250" rx="14" fill="#000"/>
+  <rect x="430" y="36" width="300" height="250" rx="14" fill="#fff"/>
+  <!-- Title bar -->
+  <rect x="430" y="36" width="300" height="36" rx="14" fill="#f3f4f6"/>
+  <rect x="430" y="56" width="300" height="16" fill="#f3f4f6"/>
+  <line x1="430" y1="72" x2="730" y2="72" stroke="#000" stroke-width="3"/>
+  <circle cx="450" cy="54" r="5" fill="#ef4444" stroke="#000" stroke-width="1.5"/>
+  <circle cx="466" cy="54" r="5" fill="#facc15" stroke="#000" stroke-width="1.5"/>
+  <circle cx="482" cy="54" r="5" fill="#4ade80" stroke="#000" stroke-width="1.5"/>
+  <rect x="500" y="45" width="140" height="18" rx="9" fill="#fff" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="512" cy="54" r="4" fill="none" stroke="#6b7280" stroke-width="1.8"/>
+  <line x1="515" y1="57" x2="519" y2="61" stroke="#6b7280" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="526" y="52" width="60" height="4" rx="2" fill="#d1d5db"/>
+  <use href="#star" transform="translate(672 55) scale(1.6)" fill="#facc15" stroke="#000" stroke-width="1.2"/>
+  <circle cx="690" cy="45" r="8" fill="#ef4444" stroke="#000" stroke-width="1.5"/>
+  <text x="690" y="45" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="800" fill="#fff">7</text>
+
+  <!-- AI tutor message -->
+  <circle cx="464" cy="101" r="15" fill="#93c5fd" stroke="#000" stroke-width="2.5"/>
+  <circle cx="459" cy="99" r="2.2" fill="#000"/>
+  <circle cx="469" cy="99" r="2.2" fill="#000"/>
+  <path d="M459 106 q5 4 10 0" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  <rect x="488" y="84" width="176" height="34" rx="12" fill="#ede9fe" stroke="#000" stroke-width="2.5"/>
+  <text x="500" y="101" dominant-baseline="central" font-size="15" font-weight="800">How was your day?</text>
+
+  <!-- User voice reply -->
+  <rect x="512" y="128" width="180" height="40" rx="12" fill="#4ade80" stroke="#000" stroke-width="2.5"/>
+  <path d="M530 144V152M538 140V156M546 136V160M554 141V155M562 134V162M570 139V157M578 143V153M586 137V159M594 133V163M602 140V156M610 142V154M618 138V158M626 144V152M634 141V155" stroke="#000" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="664" y="139" width="8" height="12" rx="4" fill="#000"/>
+  <path d="M660 147 a8 8 0 0 0 16 0" fill="none" stroke="#000" stroke-width="2"/>
+  <line x1="668" y1="155" x2="668" y2="158" stroke="#000" stroke-width="2"/>
+
+  <!-- Pronunciation score -->
+  <rect x="444" y="180" width="160" height="56" rx="10" fill="#fff" stroke="#000" stroke-width="2.5"/>
+  <circle cx="472" cy="208" r="17" fill="none" stroke="#e5e7eb" stroke-width="6"/>
+  <circle cx="472" cy="208" r="17" fill="none" stroke="#4ade80" stroke-width="6" stroke-dasharray="98.3 106.8" stroke-linecap="round" transform="rotate(-90 472 208)"/>
+  <text x="472" y="208" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="900">92</text>
+  <text x="498" y="199" dominant-baseline="central" font-size="15" font-weight="800">Great job!</text>
+  <g stroke="#000" stroke-width="1">
+    <use href="#star" x="504" y="221" fill="#facc15"/>
+    <use href="#star" x="518" y="221" fill="#facc15"/>
+    <use href="#star" x="532" y="221" fill="#facc15"/>
+    <use href="#star" x="546" y="221" fill="#facc15"/>
+    <use href="#star" x="560" y="221" fill="#e5e7eb"/>
+  </g>
+
+  <!-- Practice time chart -->
+  <rect x="614" y="180" width="90" height="56" rx="10" fill="#fde68a" stroke="#000" stroke-width="2.5"/>
+  <g fill="#111827">
+    <rect x="626" y="214" width="8" height="14" rx="2"/>
+    <rect x="641" y="206" width="8" height="22" rx="2"/>
+    <rect x="656" y="210" width="8" height="18" rx="2"/>
+    <rect x="671" y="198" width="8" height="30" rx="2"/>
+    <rect x="686" y="202" width="8" height="26" rx="2"/>
+  </g>
+
+  <!-- Live subtitles -->
+  <rect x="444" y="246" width="264" height="32" rx="8" fill="#111827"/>
+  <rect x="454" y="252" width="28" height="20" rx="4" fill="#facc15"/>
+  <text x="468" y="262" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="900">CC</text>
+  <text x="492" y="262" dominant-baseline="central" font-size="14" font-weight="800" fill="#fff">Hôm nay của bạn thế nào?</text>
+  <!-- Window border on top -->
+  <rect x="430" y="36" width="300" height="250" rx="14" fill="none" stroke="#000" stroke-width="3.5"/>
+
+  <!-- ============ Phone: daily goal ============ -->
+  <rect x="714" y="134" width="112" height="196" rx="20" fill="#000"/>
+  <rect x="708" y="128" width="112" height="196" rx="20" fill="#111827" stroke="#000" stroke-width="3"/>
+  <rect x="716" y="140" width="96" height="172" rx="12" fill="#f9fafb"/>
+  <rect x="748" y="131" width="32" height="5" rx="2.5" fill="#4b5563"/>
+  <rect x="722" y="150" width="84" height="40" rx="8" fill="#fff" stroke="#000" stroke-width="2"/>
+  <path d="M736 181 c-6 0 -9 -4 -9 -8 c0 -5 5 -7 5 -12 c3 2 4 4 4 6 c1 -2 2 -3 2 -5 c4 3 7 7 7 11 c0 4 -3 8 -9 8z" fill="#fb923c" stroke="#000" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="751" y="170" dominant-baseline="central" font-size="13" font-weight="800">7 days</text>
+  <circle cx="764" cy="222" r="20" fill="none" stroke="#e5e7eb" stroke-width="7"/>
+  <circle cx="764" cy="222" r="20" fill="none" stroke="#a78bfa" stroke-width="7" stroke-dasharray="94.2 125.7" stroke-linecap="round" transform="rotate(-90 764 222)"/>
+  <text x="764" y="222" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="900">75%</text>
+  <circle cx="764" cy="272" r="15" fill="#ef4444" stroke="#000" stroke-width="2.5"/>
+  <rect x="760" y="263" width="8" height="12" rx="4" fill="#fff"/>
+  <path d="M756 270 a8 8 0 0 0 16 0" fill="none" stroke="#fff" stroke-width="2"/>
+  <line x1="764" y1="278" x2="764" y2="282" stroke="#fff" stroke-width="2"/>
+  <rect x="748" y="300" width="32" height="4" rx="2" fill="#9ca3af"/>
+
+  <!-- ============ Floating decorations ============ -->
+  <!-- Microphone -->
+  <g transform="rotate(-10 416 268)">
+    <rect x="403" y="231" width="36" height="50" rx="18" fill="#000"/>
+    <path d="M392 258 a24 24 0 0 0 48 0" fill="none" stroke="#000" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="416" y1="282" x2="416" y2="298" stroke="#000" stroke-width="3.5"/>
+    <line x1="402" y1="300" x2="430" y2="300" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+    <rect x="398" y="226" width="36" height="50" rx="18" fill="#a78bfa" stroke="#000" stroke-width="3"/>
+    <path d="M405 243 h22 M404 252 h24 M404 261 h24" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Speech bubble -->
+  <g transform="rotate(10 776 76)">
+    <path d="M744 54 H808 A10 10 0 0 1 818 64 V80 A10 10 0 0 1 808 90 H762 L748 101 L752 90 H744 A10 10 0 0 1 734 80 V64 A10 10 0 0 1 744 54 Z" fill="#f9a8d4" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+    <text x="776" y="72" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="900">Hello!</text>
+  </g>
+  <!-- Sparkles -->
+  <g stroke="#000" stroke-width="2" stroke-linejoin="round">
+    <path d="M400 27 Q400 40 413 40 Q400 40 400 53 Q400 40 387 40 Q400 40 400 27Z" fill="#facc15"/>
+    <path d="M408 109 Q408 118 417 118 Q408 118 408 127 Q408 118 399 118 Q408 118 408 109Z" fill="#60a5fa"/>
+    <path d="M828 104 Q828 112 836 112 Q828 112 828 120 Q828 112 820 112 Q828 112 828 104Z" fill="#4ade80"/>
+  </g>
+</svg>
