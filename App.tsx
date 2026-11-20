@@ -32,10 +32,10 @@ const App: React.FC = () => {
           <Projects />
 
           {/* Compact Grid for Credentials */}
-          <section id="credentials" className="max-w-7xl mx-auto px-6 md:px-12 py-12">
+          <section id="education" className="max-w-7xl mx-auto px-6 md:px-12 py-12 scroll-mt-28">
             <h2 className="text-4xl font-black text-center mb-12 uppercase tracking-tighter">
               <span className="bg-white border-[3px] border-black px-4 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                Credentials & Awards
+                Education
               </span>
             </h2>
             

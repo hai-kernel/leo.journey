@@ -1,6 +1,6 @@
 import React from 'react';
 import { RESUME_DATA } from '../constants';
-import { ScrollText, CheckCircle } from 'lucide-react';
+import { ScrollText, CheckCircle, ExternalLink } from 'lucide-react';
 
 export const Certifications: React.FC = () => {
   return (
@@ -13,18 +13,35 @@ export const Certifications: React.FC = () => {
       <h3 className="text-2xl font-black uppercase mb-6 ml-4 border-b-2 border-black border-dashed pb-2 inline-block">Certifications</h3>
 
       <div className="space-y-3">
-        {RESUME_DATA.certifications.map((cert, index) => (
-          <div 
-            key={index} 
-            className="flex items-start gap-3 bg-white border-2 border-black p-3 rounded-lg shadow-sm hover:scale-[1.02] transition-transform"
-          >
-             <CheckCircle size={20} className="text-cyan-500 shrink-0 mt-0.5" />
-             <div>
-               <h4 className="font-bold text-sm leading-tight">{cert.name}</h4>
-               <p className="text-xs text-gray-500 font-bold mt-1">{cert.date}</p>
-             </div>
-          </div>
-        ))}
+        {RESUME_DATA.certifications.map((cert, index) => {
+          const cardClass = "flex items-start gap-3 bg-white border-2 border-black p-3 rounded-lg shadow-sm hover:scale-[1.02] transition-transform";
+          const content = (
+            <>
+              <CheckCircle size={20} className="text-cyan-500 shrink-0 mt-0.5" />
+              <div className="flex-1">
+                <h4 className="font-bold text-sm leading-tight">{cert.name}</h4>
+                {cert.date && <p className="text-xs text-gray-500 font-bold mt-1">{cert.date}</p>}
+              </div>
+            </>
+          );
+
+          // Cards with a link open the certificate in a new tab
+          return cert.link ? (
+            <a
+              key={index}
+              href={cert.link}
+              target="_blank"
+              rel="noreferrer"
+              title="View certificate"
+              className={`${cardClass} hover:bg-cyan-100 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]`}
+            >
+              {content}
+              <ExternalLink size={16} className="text-gray-500 shrink-0 mt-0.5" />
+            </a>
+          ) : (
+            <div key={index} className={cardClass}>{content}</div>
+          );
+        })}
       </div>
     </div>
   );

@@ -31,11 +31,13 @@ export interface Experience {
 export interface Certification {
   name: string;
   date?: string;
+  link?: string; // Optional link to the certificate
 }
 
 export interface Award {
   name: string;
   date?: string;
+  link?: string; // Optional link to the award proof
 }
 
 export interface SkillGroup {

@@ -127,28 +127,32 @@ export const RESUME_DATA: ResumeData = {
     }
   ],
   certifications: [
-    { name: "Amazon Junior Software Developer" },
-    { name: "Project Management Principles and Practices" },
-    { name: "Software Development Lifecycle" },
-    { name: "Web Design for Everybody: Basics of Web Development & Coding" },
-    { name: "Advanced Writing" }
+    { name: "Amazon Junior Software Developer", link: "https://coursera.org/share/8fe81ddf2f5deed1fcf5b1652f968bf0" },
+    { name: "Project Management Principles and Practices", link: "https://coursera.org/share/21dfacc87aba516dc3bff5ed8acd49dc" },
+    { name: "Software Development Lifecycle", link: "https://coursera.org/share/8fbff10b78541d02a522e3ed67d82c9a" },
+    { name: "Web Design for Everybody: Basics of Web Development & Coding", link: "https://coursera.org/share/11085e92cbfed3506c291867b83ce915" },
+    { name: "Advanced Writing", link: "https://coursera.org/share/b0bde75569607f8921439e16f1d3d516" }
   ],
   awards: [
     {
       name: "Honorable Student of Trimester - Semester Summer 2026",
-      date: "Summer 2026"
+      date: "Summer 2026",
+      link: "https://drive.google.com/file/d/1I3xC1ZkyAcAvS78ZRUwVi0UtjjKDDJaq/view?usp=drive_link"
     },
     {
       name: "Honorable Student of Trimester - Semester Spring 2025",
-      date: "Spring 2025"
+      date: "Spring 2025",
+      link: "https://drive.google.com/file/d/1Da_Rj5mxOu6NCn2AIkqo-d3QZJau8Oij/view?usp=sharing"
     },
     {
       name: "Excellent Student of Trimester - Semester Fall 2024",
-      date: "Fall 2024"
+      date: "Fall 2024",
+      link: "https://drive.google.com/file/d/1f70cL29AnjoyeSmyvlSQ5HBH4653oSTE/view?usp=sharing"
     },
     {
       name: "Honorable Student of Trimester - Semester Spring 2024",
-      date: "Spring 2024"
+      date: "Spring 2024",
+      link: "https://drive.google.com/file/d/1cYgWKa5bOklGDM1op-USBekhIQH_zXt1/view?usp=sharing"
     },
     {
       name: "Consolation Prize – Provincial Excellent Student Competition in Mathematics (Grade 12)",
