@@ -31,17 +31,24 @@ export const Experience: React.FC = () => {
             
             <div className="group bg-white border-[3px] border-black rounded-xl p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:rotate-[0.5deg] transition-all duration-300">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-                <div>
-                  <h3 className="text-2xl font-black group-hover:text-blue-700 transition-colors">{exp.role}</h3>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span className="w-2 h-2 bg-black rounded-full group-hover:bg-blue-500 transition-colors"></span>
-                    <span className="font-bold text-lg">{exp.company}</span>
-                    {exp.location && (
-                      <>
-                        <span className="text-gray-400">•</span>
-                        <span className="font-medium text-gray-600">{exp.location}</span>
-                      </>
-                    )}
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                  {exp.logoUrl && (
+                    <div className="shrink-0 w-20 h-14 md:w-24 md:h-16 bg-white border-[3px] border-black rounded-lg p-2 flex items-center justify-center shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] group-hover:-rotate-3 transition-transform">
+                      <img src={exp.logoUrl} alt={`${exp.company} logo`} className="max-w-full max-h-full object-contain" />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-2xl font-black group-hover:text-blue-700 transition-colors">{exp.role}</h3>
+                    <div className="flex flex-wrap items-center gap-x-2 mt-1">
+                      <span className="w-2 h-2 bg-black rounded-full group-hover:bg-blue-500 transition-colors"></span>
+                      <span className="font-bold text-lg">{exp.company}</span>
+                      {exp.location && (
+                        <>
+                          <span className="text-gray-400">•</span>
+                          <span className="font-medium text-gray-600">{exp.location}</span>
+                        </>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <span className="bg-black text-white px-4 py-1.5 rounded-full font-bold text-sm self-start md:self-center border-2 border-transparent group-hover:border-blue-400 group-hover:bg-blue-600 transition-all">

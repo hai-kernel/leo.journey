@@ -3,9 +3,8 @@ import { RESUME_DATA } from '../constants';
 import { Terminal, Database, Globe, Code, Server, Coffee, Layers, Box } from 'lucide-react';
 
 export const MarqueeSkills: React.FC = () => {
-  // Get all unique technologies
-  const allTech = Array.from(new Set(RESUME_DATA.experience.flatMap(exp => exp.technologies)));
-  const displayTech = [...allTech, "Java", "Spring Boot", "System Design", "Algorithms"]; // Ensure core skills are present
+  // Skills come from the "Technical Skills" section of the CV
+  const displayTech = RESUME_DATA.skills.flatMap(group => group.items);
   
   // Duplicate for seamless loop
   const marqueeItems = [...displayTech, ...displayTech];
@@ -24,7 +23,7 @@ export const MarqueeSkills: React.FC = () => {
   ];
 
   return (
-    <div className="w-full border-y-[3px] border-black bg-white overflow-hidden py-6 rotate-1 md:rotate-2 my-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
+    <div id="skills" className="w-full border-y-[3px] border-black bg-white overflow-hidden py-6 rotate-1 md:rotate-2 my-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)] scroll-mt-32">
       <div className="flex w-[200%] animate-scroll">
         {marqueeItems.map((tech, index) => (
           <div 

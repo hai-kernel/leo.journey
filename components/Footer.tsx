@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           </h2>
           
           <p className="font-handwriting text-2xl text-gray-500 mb-8 max-w-lg mx-auto transform -rotate-1">
-            I am currently available for internships and full-time positions. 
+            I am currently open to Junior Java Engineer roles.
             Send me a message and let's create something epic.
           </p>
 

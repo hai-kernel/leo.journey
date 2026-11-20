@@ -23,6 +23,7 @@ export interface Experience {
   keyFeatures?: string[];
   keyContributions: string[];
   imageUrl?: string; // Optional image for the project
+  logoUrl?: string; // Optional company logo (experience cards)
   link?: string; // Optional live link
   github?: string; // Optional specific Github repository link
 }
@@ -37,12 +38,18 @@ export interface Award {
   date?: string;
 }
 
+export interface SkillGroup {
+  category: string;
+  items: string[];
+}
+
 export interface ResumeData {
   name: string;
   realName: string;
   title: string;
   contact: ContactInfo;
   objective: string;
+  skills: SkillGroup[];
   education: Education[];
   experience: Experience[];
   projects: Experience[];

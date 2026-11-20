@@ -77,15 +77,18 @@ export const Projects: React.FC = () => {
                             <ExternalLink size={18} />
                           </a>
                         )}
-                        <a 
-                          href={project.github || `https://${RESUME_DATA.contact.github}`} 
-                          target="_blank" 
-                          rel="noreferrer" 
-                          className="p-2 hover:bg-green-100 rounded-full border border-transparent hover:border-black transition-all hover:rotate-12"
-                          title="View Code"
-                        >
-                          <Github size={20} />
-                        </a>
+                        {/* Only show the code link when the repository is public */}
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="p-2 hover:bg-green-100 rounded-full border border-transparent hover:border-black transition-all hover:rotate-12"
+                            title="View Code"
+                          >
+                            <Github size={20} />
+                          </a>
+                        )}
                       </div>
                     </div>
 

@@ -4,18 +4,17 @@ import infinityImg from './img/project-2/Gemini_Generated_Image_f5zcyrf5zcyrf5zc
 import personalImg1 from './img/personal/z7748881404441_471757216daf1147f636a165f0d2f3ea.jpg';
 import personalImg2 from './img/personal/z7748881817292_96591714bfdb135c4730ddeb137ee193.jpg';
 import personalImg3 from './img/personal/z7748884727806_4ac82a9ef5b19ecfc6444d2080619851.jpg';
-import cvPdf from './cv/CV_anduin.pdf';
+import nabLogo from './img/companies/nab.svg';
+import fptLogo from './img/companies/fpt-software.svg';
+import cvPdf from './cv/Dao_Hong_Hai_CV.pdf';
 
 export const RESUME_DATA: ResumeData = {
   name: "LEO",
   realName: "Dao Hong Hai",
   title: "Backend Developer",
-  // HƯỚNG DẪN DOWNLOAD CV:
-  // 1. Nếu bạn có file PDF sẵn (vd: royce-cv.pdf), hãy đặt nó vào thư mục 'public'.
-  // 2. Điền tên file vào dòng dưới đây: cvUrl: "/royce-cv.pdf"
-  // 3. Nếu để trống (""), nút Download sẽ dùng tính năng in trang web (Print to PDF).
-  cvUrl: cvPdf, 
-  
+  // The "Download CV" button serves this PDF. Leave it empty ("") to fall back to printing the page.
+  cvUrl: cvPdf,
+
   contact: {
     phone: "+84 366 250 704",
     email: "honghaiit257@gmail.com",
@@ -23,35 +22,73 @@ export const RESUME_DATA: ResumeData = {
     linkedin: "www.linkedin.com/in/hai-hong-dao/",
     location: "Ho Chi Minh City, Viet Nam"
   },
-  objective: "Final-year Software Engineering student with hands-on experience in building backend systems using Java Spring Boot and microservices architecture. Familiar with technologies like Kafka, Redis, and AWS in developing scalable and responsive applications with real-time data processing. Passionate about system design, developing low-latency, high-performance applications, and solving complex real-world problems.",
+  objective: "Final-year Software Engineering student with backend experience at NAB Vietnam and FPT Software, mainly with Java Spring Boot. In the short term, I hope to keep improving my technical skills and learn from experienced engineers while contributing reliable work to my team and projects. In the long term, I want to take on more responsibility, grow into a solid engineer and add real value to the company.",
+  skills: [
+    { category: "Languages", items: ["Java", "JavaScript", "C"] },
+    { category: "Frameworks", items: ["Spring Boot", "Spring Security", "Spring Data JPA", "Spring Cloud Gateway", "Eureka", "Keycloak"] },
+    { category: "Databases", items: ["PostgreSQL", "MySQL", "MS SQL Server", "MongoDB", "Redis"] },
+    { category: "Messaging", items: ["Apache Kafka"] },
+    { category: "Cloud Services", items: ["AWS S3", "AWS EC2", "AWS Transcribe", "AWS Translate", "Azure AI Speech"] },
+    { category: "Tools", items: ["Git", "Docker", "Snyk"] }
+  ],
   education: [
     {
       institution: "FPT University",
-      degree: "Bachelor Degree of Software Engineering",
-      duration: "2022 - 2026 (Expected)",
+      degree: "Bachelor of Software Engineering",
+      duration: "Dec 2022 - Dec 2026 (Expected)",
       details: [
-        "GPA: 8.3/10.0"
+        "GPA: 8.25/10.0"
       ]
     }
   ],
   experience: [
     {
+      company: "National Australia Bank (NAB) Vietnam",
+      role: "Software Engineer",
+      duration: "July 2026 - Oct 2026",
+      location: "HCMC",
+      logoUrl: nabLogo,
+      technologies: ["Java Spring Boot", "Spring Scheduler", "PostgreSQL", "Snyk CLI", "Spring Mail", "Agile Scrum", "Rally"],
+      keyContributions: [
+        "Built a Spring Boot platform tracking vulnerabilities across all services.",
+        "Automated SCA, SAST and container scans at the production tag with Spring Scheduler.",
+        "Designed the job pipeline for ~400 services: bounded thread pool, PostgreSQL queue.",
+        "Implemented a Snyk CLI runner with timeouts, exit-code handling and stuck-job recovery.",
+        "Delivered per-service email reports to squads via Spring Mail, reporting each issue once.",
+        "Worked in Agile Scrum with Australia, India and Vietnam teams, tracking tasks in Rally."
+      ]
+    },
+    {
       company: "FPT Software",
-      role: "Backend Developer Intern",
+      role: "On Job Training - Backend Engineer",
       duration: "Sept 2025 - Jan 2026",
       location: "HCMC",
-      technologies: ["Java Spring Boot", "Microservices", "Redis", "Apache Kafka", "Netty Socket", "AWS OpenSearch", "AWS S3", "PostgreSQL", "MongoDB"],
+      logoUrl: fptLogo,
+      technologies: ["Java Spring Boot", "Apache Kafka", "AWS S3", "PostgreSQL", "MongoDB", "Agile Scrum"],
       keyContributions: [
-        "Designed and developed scalable backend services using Java Spring Boot (Microservices architecture) to manage patient information and blood test workflows.",
-        "Improved system performance and response time by implementing Redis caching and asynchronous communication using Apache Kafka.",
-        "Built real-time notifications and session control using Netty Socket to prevent one account from being used on multiple devices.",
-        "Integrated AWS OpenSearch for fast search of patient and medication data; used AWS S3 for file storage.",
-        "Designed and managed data using PostgreSQL and MongoDB.",
-        "Collaborated in an Agile Scrum team, participating in sprint planning and daily stand-ups, and contributing to retrospectives."
+        "Built 30+ Spring Boot APIs for sample collection, test orders, results and inventory.",
+        "Processed instrument results via Kafka, completing samples, orders and medical records.",
+        "Backed up raw HL7 results and PDF reports in AWS S3, served via presigned URLs.",
+        "Designed PostgreSQL schemas for orders and inventory, MongoDB for patient records.",
+        "Delivered features over 10 sprints in an Agile Scrum team."
       ]
     }
   ],
   projects: [
+    {
+      company: "NabBazaar - NAB Training Project",
+      role: "Backend Developer",
+      duration: "July 2026 - Oct 2026",
+      technologies: ["Java Spring Boot", "Spring Cloud Gateway", "Keycloak", "Eureka", "Apache Kafka", "Redis", "MySQL"],
+      description: "An e-commerce system built with microservices during the NAB training program, covering users, products, orders, inventory and notifications.",
+      keyContributions: [
+        "Handled 5 microservices (user, order, product, notification, inventory).",
+        "Secured all APIs at the API Gateway by using Keycloak.",
+        "Cached product data in Redis and used a Redis lock to keep stock updates consistent.",
+        "Registered services in Eureka, so they find each other by name instead of fixed URLs.",
+        "Handled order placement, stock updates and notifications through Kafka events."
+      ]
+    },
     {
       company: "Langmaster - AI English Learning Application",
       role: "Backend Developer",
@@ -62,29 +99,28 @@ export const RESUME_DATA: ResumeData = {
       github: "https://github.com/Ducpham04/English-LearningAppDesign",
       imageUrl: langmasterImg,
       keyContributions: [
-        "Designed and developed a real-time English learning application using Java Spring Boot with a microservices-based architecture.",
-        "Built a low-latency speaking practice feature using WebSocket and OpenAI to enable real-time AI-driven conversations.",
-        "Integrated AWS Transcribe and AWS Translate to support real-time speech-to-text and automatic subtitle translation.",
-        "Implemented pronunciation scoring and feedback using Azure AI Speech, and generated IPA phonetic transcription using eSpeak NG.",
-        "Utilized AWS S3 for scalable storage of transcripts and user learning data."
+        "Built a real-time English learning backend with Java Spring Boot.",
+        "Built low-latency AI speaking practice with WebSocket and OpenAI.",
+        "Added live transcription and subtitle translation via AWS Transcribe/Translate.",
+        "Implemented pronunciation scoring and feedback with Azure AI Speech.",
+        "Stored transcripts and learning data in AWS S3."
       ]
     },
     {
-      company: "Infertility Treatment Management System",
+      company: "Infertility Treatment Management and Monitoring System",
       role: "Backend Developer",
       duration: "May 2025 - July 2025",
-      technologies: ["Java Spring Boot", "Spring Security", "Spring Data JPA", "RESTful API", "JWT", "WebSocket", "MS SQL Server", "Cloudinary", "VNPAY", "ReactJS"],
+      technologies: ["Java Spring Boot", "JWT", "WebSocket", "MS SQL Server", "Cloudinary", "VNPAY", "ReactJS"],
       description: "A healthcare system for monitoring infertility treatment progress over time, supporting patient management, appointment scheduling, and structured treatment workflows.",
       link: "#",
       github: "https://github.com/hai-kernel/Infertility-Treatment-Management-and-Monitoring-System",
       imageUrl: infinityImg,
       keyContributions: [
-        "Developed secure RESTful APIs using Spring Security (JWT) with authentication flows including registration, password reset, and email verification using Spring Mail.",
-        "Built an appointment scheduling system with time-slot validation and conflict handling.",
-        "Implemented real-time notifications using WebSocket and email services.",
-        "Designed and managed data using MS SQL Server.",
-        "Integrated Cloudinary for file storage and VNPAY for online payments.",
-        "Developed modules for managing patients, doctors, staff, and treatment workflows."
+        "Built secure REST APIs with Spring Security (JWT).",
+        "Implemented sign-up, password reset and email verification with Spring Mail.",
+        "Built appointment scheduling with time-slot validation and conflict handling.",
+        "Designed the MS SQL Server schema for patients, doctors, staff and treatments.",
+        "Integrated VNPAY payments and Cloudinary file storage."
       ]
     }
   ],
@@ -96,6 +132,10 @@ export const RESUME_DATA: ResumeData = {
     { name: "Advanced Writing" }
   ],
   awards: [
+    {
+      name: "Honorable Student of Trimester - Semester Summer 2026",
+      date: "Summer 2026"
+    },
     {
       name: "Honorable Student of Trimester - Semester Spring 2025",
       date: "Spring 2025"
@@ -118,7 +158,7 @@ export const RESUME_DATA: ResumeData = {
     }
   ],
   awardPhotos: [
-    "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=600&q=80", 
+    "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=600&q=80",
     "https://images.unsplash.com/photo-1565034946487-077786996e27?auto=format&fit=crop&w=600&q=80"
   ],
   personalPhotos: [

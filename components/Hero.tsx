@@ -163,8 +163,8 @@ export const Hero: React.FC = () => {
           {/* Floating Sticker Badge */}
           <div className="absolute bottom-12 right-0 bg-white border-[3px] border-black p-4 rotate-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] z-20 hover:rotate-12 transition-transform cursor-default animate-float-delayed">
              <div className="text-yellow-400 text-4xl mb-1">★</div>
-             <div className="font-bold text-lg leading-none">&lt; 1 Year</div>
-             <div className="text-xs font-bold text-gray-500">Fresher</div>
+             <div className="font-bold text-lg leading-none">NAB · FPT</div>
+             <div className="text-xs font-bold text-gray-500">Backend Experience</div>
           </div>
         </div>
       </div>
