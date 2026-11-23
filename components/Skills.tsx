@@ -9,7 +9,7 @@ const GROUP_STYLES: Record<string, { color: string; icon: React.ReactNode }> = {
   'Databases': { color: 'bg-blue-300', icon: <Database size={20} strokeWidth={2.5} /> },
   'Messaging': { color: 'bg-orange-300', icon: <MessageSquare size={20} strokeWidth={2.5} /> },
   'Cloud Services': { color: 'bg-cyan-300', icon: <Cloud size={20} strokeWidth={2.5} /> },
-  'Tools': { color: 'bg-pink-300', icon: <Wrench size={20} strokeWidth={2.5} /> },
+  'Tools & Platforms': { color: 'bg-pink-300', icon: <Wrench size={20} strokeWidth={2.5} /> },
 };
 
 export const Skills: React.FC = () => {

@@ -26,11 +26,11 @@ export const RESUME_DATA: ResumeData = {
   objective: "Final-year Software Engineering student with backend experience at NAB Vietnam and FPT Software, mainly with Java Spring Boot. In the short term, I hope to keep improving my technical skills and learn from experienced engineers while contributing reliable work to my team and projects. In the long term, I want to take on more responsibility, grow into a solid engineer and add real value to the company.",
   skills: [
     { category: "Languages", items: ["Java", "JavaScript", "C"] },
-    { category: "Frameworks", items: ["Spring Boot", "Spring Security", "Spring Data JPA", "Spring Cloud Gateway", "Eureka", "Keycloak"] },
+    { category: "Frameworks", items: ["Spring Boot", "Spring Security", "Spring Data JPA", "Spring Cloud Gateway", "Eureka"] },
     { category: "Databases", items: ["PostgreSQL", "MySQL", "MS SQL Server", "MongoDB", "Redis"] },
     { category: "Messaging", items: ["Apache Kafka"] },
     { category: "Cloud Services", items: ["AWS S3", "AWS EC2", "AWS Transcribe", "AWS Translate", "Azure AI Speech"] },
-    { category: "Tools", items: ["Git", "Docker", "Snyk"] }
+    { category: "Tools & Platforms", items: ["Git", "Docker", "Snyk", "Keycloak"] }
   ],
   education: [
     {
